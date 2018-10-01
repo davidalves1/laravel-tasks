@@ -17,6 +17,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/teste', function () {
-    return response()->json(['msg' => 'Sucesso!']);
+Route::get('/', function () {
+    error_log("INFO: get /");
+    return response()->json(['msg' => 'Success');
 });
