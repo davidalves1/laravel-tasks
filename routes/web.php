@@ -14,12 +14,6 @@
 use App\Task;
 use Illuminate\Http\Request;
 
-Route::get('/', function () {
-    error_log("INFO: get /");
-    return response()->json(['msg' => 'Success');
-});
-
-
 /**
     * Show Task Dashboard
     */
